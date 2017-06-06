@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:background="#eeeeee"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="7dp">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="smo.zooket.testC.Main2Activity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/RecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:background="@color/ColorPrimary"></android.support.v7.widget.RecyclerView>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/RecyclerView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:foregroundGravity="right"
+                    android:layout_gravity="right"
+                    android:background="@color/ColorPrimary"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <smo.zooket.Adapter.SwipeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pulltorefresh_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fillViewport="true">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <!--Items Part-->
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/contentHolder"
+                                    android:orientation="vertical">
+
+                                    <in.srain.cube.views.GridViewWithHeaderAndFooter
+                                        android:id="@+id/itemgrid"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:horizontalSpacing="5dp"
+                                        android:numColumns="1"
+                                        android:visibility="gone"
+                                        android:overScrollMode="never"
+                                        android:scrollbars="none"
+                                        android:stretchMode="columnWidth"
+                                        android:verticalSpacing="8dp">
+                                    </in.srain.cube.views.GridViewWithHeaderAndFooter>
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/recycleProduct"
+                                        android:layout_margin="8dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                    </android.support.v7.widget.RecyclerView>
+
+                                </LinearLayout>
+                                <!--NotFound-->
+                                <LinearLayout
+                                    android:id="@+id/NothingFound"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <smo.zooket.Util.SizeAdjustingTextView
+                                        fontPath="fonts/BYekan.ttf"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:lines="1"
+                                        android:singleLine="true"
+                                        android:text="@string/nothingfound"
+                                        android:textSize="16dp" />
+
+                                </LinearLayout>
+                                <!--loading-->
+                                <LinearLayout
+                                    android:id="@+id/loadingHolder"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:visibility="gone"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <include
+                                            android:id="@+id/loadingmore"
+                                            layout="@layout/loading"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"></include>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/NoInternet"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:visibility="gone">
+
+                                        <smo.zooket.Util.SizeAdjustingTextView
+                                            android:background="@color/DarkWhite"
+                                            fontPath="fonts/BYekan.ttf"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:lines="1"
+                                            android:singleLine="true"
+                                            android:text="@string/failedtoload"
+                                            android:textSize="16dp" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="20dp"
+                                            android:gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <smo.zooket.Util.SizeAdjustingTextView
+                                                fontPath="fonts/BYekan.ttf"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:gravity="center_vertical"
+                                                android:lines="1"
+                                                android:singleLine="true"
+                                                android:text="@string/retry"
+                                                android:textSize="16dp" />
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:src="@drawable/smo_refresh" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </ScrollView>
+                    </FrameLayout>
+                </LinearLayout>
+            </smo.zooket.Adapter.SwipeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

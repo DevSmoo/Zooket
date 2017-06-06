@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/White">
+    <RelativeLayout
+        android:id="@+id/DetailsHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:id="@+id/RegisterHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    fontPath="fonts/BYekan.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="ورود به حساب کاربری"
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="18dp" />
+                <View
+                    android:id="@+id/Seperator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#59203543"></View>
+                <EditText
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:hint="نام و نام خانوادگی"
+                    android:lines="1"
+                    android:maxLength="80"
+                    android:singleLine="true"
+                    android:textSize="17dp" />
+                <EditText
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:id="@+id/Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:hint="نام کاربری (ایمیل)"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textSize="17dp" />
+                <EditText
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:id="@+id/Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:hint="تلفن همراه"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textSize="17dp" />
+                <EditText
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:id="@+id/Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:hint="رمز عبور"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textSize="17dp" />
+                <EditText
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:id="@+id/PasswordConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:hint="تکرار رمز عبور"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textSize="17dp" />
+                <LinearLayout
+                    android:id="@+id/sendholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/Blue"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:id="@+id/sendbutton"
+                        fontPath="fonts/BYekan.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:text="ثبت نام"
+                        android:textColor="@color/White"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/sendImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tikwhite" />
+
+                    <com.pnikosis.materialishprogress.ProgressWheel xmlns:wheel="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/sendprogressbar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="gone"
+                        wheel:matProg_barColor="@color/ColorPrimary"
+                        wheel:matProg_progressIndeterminate="true" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

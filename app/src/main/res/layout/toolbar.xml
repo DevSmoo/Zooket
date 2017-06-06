@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/app_bar_top_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ColorPrimary"
+    android:elevation="4dp">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@drawable/right_toolbar"
+        android:onClick="ToggleDrawer"
+        android:paddingLeft="14dp"
+        android:layout_marginRight="8dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"/>
+
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/ic_backwhite"
+        android:onClick="Back" />
+
+    <!-- <ImageButton
+         android:id="@+id/favoritebutton"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_gravity="left"
+         android:layout_marginRight="14dp"
+         android:background="@drawable/ic_shoppinglistwhite"
+         android:onClick="ViewFavorite" />-->
+
+    <ImageButton
+        android:id="@+id/basketbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/basket"
+        android:onClick="ViewMap" />
+
+</android.support.v7.widget.Toolbar>

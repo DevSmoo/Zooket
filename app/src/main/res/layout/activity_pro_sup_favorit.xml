@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"></include>
+
+        <smo.zooket.Util.MaterialTab.MaterialTabs
+            android:id="@+id/tabHost"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/ColorPrimary"
+            android:textColor="@color/Gray"
+            app:mtIndicatorColor="@color/ScrollColor"
+            app:mtTextColorSelected="@color/White"
+            app:mtMrlRippleColor="@color/ScrollColor"
+            app:mtTextSelectedStyle="bold"
+            app:mtTextUnselectedStyle="normal"
+            app:mtSameWeightTabs="false"
+            app:mtPaddingMiddle="false" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabHost" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/ColorPrimary"
+        android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/shadow"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--2-->
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:id="@+id/Container"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:id="@+id/name"
+                android:textSize="16dp"
+                android:textColor="@color/Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="نام محصول"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:id="@+id/count"
+                android:textSize="16dp"
+                android:textColor="@color/Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="نام محصول"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:id="@+id/totalPrice"
+                android:textSize="16dp"
+                android:textColor="@color/DarkRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="نام محصول"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/CounterContainer"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:id="@+id/decContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/Btn2"
+                android:gravity="center"
+                android:padding="7dp">
+                <TextView
+                    fontPath="fonts/BYekan.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textSize="24dp"
+                    android:text="-"
+                    android:clickable="true"
+                    android:textColor="@color/White"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/products"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/counterTxt"
+                        fontPath="fonts/BYekan.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="@color/Black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/incContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/Btn2"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="7dp">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        fontPath="fonts/BYekan.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:textSize="24dp"
+                        android:singleLine="true"
+                        android:text="+"
+                        android:clickable="true"
+                        android:textColor="@color/White"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/EditContainer"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/Red"
+                android:gravity="center"
+                android:padding="7dp">
+                <TextView
+                    fontPath="fonts/BYekan.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textSize="16dp"
+                    android:text="تفییر تعداد سفارش"
+                    android:textColor="@color/White"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--3-->
+    <LinearLayout
+        android:layout_margin="2dp"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <smo.zooket.Util.ItemImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/thumbnail"
+            android:scaleType="fitXY"
+            android:src="@drawable/loadingpro" />
+
+    </LinearLayout>
+
+</LinearLayout>

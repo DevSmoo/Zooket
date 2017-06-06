@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e7e7e7">
+
+    <LinearLayout
+        android:gravity="right|center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                fontPath="fonts/BYekan.ttf"
+                android:textSize="48dp"
+                android:layout_marginBottom="32px"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="زوکِت"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/rounded"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/district_btn"
+                android:background="@drawable/left_rounded"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+                <ImageView
+                    android:paddingLeft="8dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_tikwhite"/>
+            </LinearLayout>
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/district"
+                android:layout_weight="4"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <!--<AutoCompleteTextView
+                    android:enabled="false"
+                    android:inputType="text"
+                    fontPath="fonts/BYekan.ttf"
+                    android:id="@+id/AddressTxt"
+                    android:textSize="16dp"
+                    android:hint="آدرس جدید"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black"
+                    android:text="bhhbh" />-->
+                <AutoCompleteTextView
+                    android:hint="محله موردنظر را وارد کنید"
+                    fontPath="fonts/BYekan.ttf"
+                    android:id="@+id/autoCompleteTextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:text="">
+                    <requestFocus />
+                </AutoCompleteTextView>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/right_rounded"
+                android:layout_weight="1"
+                android:layout_gravity="center|center_vertical"
+                android:gravity="center|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    fontPath="fonts/BYekan.ttf"
+                    android:textSize="16dp"
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تهران"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/location_btn"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/smo_location"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

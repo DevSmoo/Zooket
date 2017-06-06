@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">زوکت</string>
+    <string name="drawer_open">Drawer Opened</string>
+    <string name="drawer_close">Drawer Closed</string>
+    <string name="nointernet">عدم دسترسی به اینترنت</string>
+    <string name="loading">لطفا صبر کنید ...</string>
+    <string name="failedtoload">خطا در برقراری ارتباط</string>
+    <string name="failedtoloadwithparantes">خطا در برقراری ارتباط (</string>
+    <string name="retrywithparantes">تلاش مجدد)</string>
+    <string name="activegps">فعال سازی</string>
+    <string name="retry">تلاش مجدد</string>
+    <string name="welcome">به زوکت خوش آمدید</string>
+    <string name="chooseprovince">لطفا استان مورد نظر را انتخاب کنید:</string>
+    <string name="choosecategory">لطفا دسته بندی مورد نظر را انتخاب کنید:</string>
+    <string name="finishmessage">مورد دیگری یافت نشد</string>
+    <string name="nothingfound">موردی یافت نشد</string>
+    <string name="nolocationservice">عدم دسترسی به سرویس موقعیت یاب</string>
+
+    <string-array name="provinces">
+        <item>مهم نیست</item>
+        <item>آذربایجان شرقی</item>
+        <item>آذربایجان غربی</item>
+        <item>اردبیل</item>
+        <item>اصفهان</item>
+        <item>البرز</item>
+        <item>ایلام</item>
+        <item>بوشهر</item>
+        <item>تهران</item>
+        <item>چهارمحال و بختیاری</item>
+        <item>خراسان جنوبی</item>
+        <item>خراسان رضوی</item>
+        <item>خراسان شمالی</item>
+        <item>خوزستان</item>
+        <item>زنجان</item>
+        <item>سمنان</item>
+        <item>سیستان و بلوچستان</item>
+        <item>فارس</item>
+        <item>قزوین</item>
+        <item>قم</item>
+        <item>کردستان</item>
+        <item>کرمان</item>
+        <item>کرمانشاه</item>
+        <item>کهگیلویه و بویراحمد</item>
+        <item>گلستان</item>
+        <item>گیلان</item>
+        <item>لرستان</item>
+        <item>مازندران</item>
+        <item>مرکزی</item>
+        <item>هرمزگان</item>
+        <item>همدان</item>
+        <item>یزد</item>
+    </string-array>
+
+    <string-array name="provinces2">
+        <item>آذربایجان شرقی</item>
+        <item>آذربایجان غربی</item>
+        <item>اردبیل</item>
+        <item>اصفهان</item>
+        <item>البرز</item>
+        <item>ایلام</item>
+        <item>بوشهر</item>
+        <item>تهران</item>
+        <item>چهارمحال و بختیاری</item>
+        <item>خراسان جنوبی</item>
+        <item>خراسان رضوی</item>
+        <item>خراسان شمالی</item>
+        <item>خوزستان</item>
+        <item>زنجان</item>
+        <item>سمنان</item>
+        <item>سیستان و بلوچستان</item>
+        <item>فارس</item>
+        <item>قزوین</item>
+        <item>قم</item>
+        <item>کردستان</item>
+        <item>کرمان</item>
+        <item>کرمانشاه</item>
+        <item>کهگیلویه و بویراحمد</item>
+        <item>گلستان</item>
+        <item>گیلان</item>
+        <item>لرستان</item>
+        <item>مازندران</item>
+        <item>مرکزی</item>
+        <item>هرمزگان</item>
+        <item>همدان</item>
+        <item>یزد</item>
+    </string-array>
+
+    <string name="aboutus">
+<![CDATA[
+
+    <b>نگاریاب</b>
+    <br /><br />
+    نگاریاب نه يك آگهي نامه بلكه جايي براي منعكس شدن نظرات شما و رساندن آن به ديگران است. جايي براي شناختن و معرفي شدن. بدون هيچ هزينه اي و تنها با اتكا به نظرات كاربران و همت فعالان صنعت زيبايي. پس به نگاریاب بياييد تا بدانيد و زيبا شود و يامعرفي شويد و خالق زيبايي باشد. نگاریاب تحت قوانين نظام جمهوري جمهوري اسلامي ايران فعاليت مي كند و هر گونه اطلاعات و نظري بر خلاف قوانين بر طبق گزارش كاربران و يا نظارت دروني اپليكيشن حذف خواهد شد.
+    <br /><br />
+    <b>ارتباط با ما</b>
+    <br /><br />
+    آدرس سايت: <a href="http://www.negaryab.ir">http://www.negaryab.ir</a>
+    <br />
+    شماره تماس: 09337991169
+    <br /><br />
+
+    ]]>
+    </string>
+
+    <string name="favoritList">اضافه به علاقه مندی</string>
+    <string name="reportError">گزارش خطا</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_order1">Order1Activity</string>
+
+
+</resources>
